@@ -14,9 +14,9 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - /var/lib/drone:/data
     networks:
-      - web
+      - drone
 
 networks:
-  web:
+  drone:
     external: true
-    name: web
+    name: drone
